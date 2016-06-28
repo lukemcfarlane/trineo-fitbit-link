@@ -3,6 +3,8 @@ Trineo Fitbit Link
 
 Adds link to Trineo group to header on fitbit.com.
 
+![Screenshot](https://raw.githubusercontent.com/lukemcfarlane/trineo-fitbit-link/master/screenshot.png)
+
 Installation
 ------------
 
