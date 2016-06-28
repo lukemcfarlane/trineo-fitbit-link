@@ -1,5 +1,5 @@
 const LINK = '/group/22ZMCS'
-const PHOTO_URL = chrome.extension.getURL('trineo-logo.png')
+const PHOTO_URL = chrome.extension.getURL('images/trineo-logo.png')
 
 $(document).ready(() => {
   let $profileLink = $('a.nav-item-profile')
