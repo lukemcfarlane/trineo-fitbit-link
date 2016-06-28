@@ -1,0 +1,8 @@
+a.nav-item-group {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+a.nav-item-group.hidden {
+  opacity: 0;
+}
