@@ -8,6 +8,7 @@ Adds link to Trineo group to header on fitbit.com.
 Installation
 ------------
 
-1. Navigate to chrome://extensions in your Chrome browser
-2. Check "Developer Mode" on top right-hand corner of Extensions page
-3. Click "Load unpacked extension..." and select the directory that contains the contents of this repository
+1. [Click here](https://github.com/lukemcfarlane/trineo-fitbit-link/blob/master/dist/trineo-fitbit-link.crx?raw=true) to download the extension.
+2. Go to chrome://extensions in Google Chrome.
+3. Drag the downloaded extension onto the extensions page.
+ 
