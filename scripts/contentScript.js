@@ -1,18 +1,16 @@
-const LINK = '/group/22ZMCS'
-const PHOTO_URL = chrome.extension.getURL('images/trineo-logo.png')
+const TRINEO_GROUP_URL = '/group/22ZMCS'
+const LOGO_URL = chrome.extension.getURL('images/trineo-logo.png')
 
-$(document).ready(() => {
-  let $profileLink = $('a.nav-item-profile')
-  let $groupLink = $profileLink.clone()
-    .removeClass('nav-item-profile')
-    .addClass('nav-item-group')
-    .addClass('hidden')
-    .attr('href', LINK)
-    .attr('title', 'View Trineo group')
-  let photo = $groupLink.find('img.photo')
-    .attr('src', PHOTO_URL)
-    .load(() => {
-      $groupLink.removeClass('hidden')
-    })
-  $profileLink.after($groupLink)
-})
+let profileLink = document.querySelector('a.nav-item-profile')
+let groupLink = profileLink.cloneNode(true)
+let image = groupLink.querySelector('img')
+
+groupLink.classList.remove('nav-item-profile')
+groupLink.classList.add('hidden')
+groupLink.href = TRINEO_GROUP_URL
+groupLink.title = 'View Trineo group'
+
+image.onLoad = (event) => groupLink.removeClass('hidden')
+image.src = LOGO_URL
+
+profileLink.parentNode.insertBefore(groupLink, profileLink.nextSibling)
