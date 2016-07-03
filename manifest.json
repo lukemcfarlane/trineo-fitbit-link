@@ -2,15 +2,12 @@
 	"manifest_version": 2,
 	"name": "Trineo Fitbit link",
 	"icons": { "128": "images/icon.png" },
-	"version": "1.0",
+	"version": "1.0.1",
 	"description": "Adds link to Trineo group to header on fitbit.com.",
-	"permissions": [
-		"tabs",
-		"https://code.jquery.com/jquery-2.1.1.min.js"
-	],
+	"permissions": ["tabs"],
 	"content_scripts": [{
 		"matches": ["https://www.fitbit.com/*"],
-		"js": ["scripts/jquery-2.1.1.min.js", "scripts/contentScript.js"],
+		"js": ["scripts/contentScript.js"],
 		"css": ["style/style.css"],
 		"run_at": "document_end"
 	}],
